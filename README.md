@@ -1,4 +1,4 @@
-# EDA-Projects
+# All my Data Projects
 
 ## Overview
 ### 1. Amazon Product Ratings and Reviews EDA
@@ -12,10 +12,13 @@ Customer reviews and pricing strategies play a major role in how products perfor
 The goal of this exploratory analysis is to identify patterns in pricing and discounting, compare performance across categories, and explore the relationship between customer reviews and overall product ratings.
 
 #### Steps:
-1. **Data Cleaning** - Load the dataset, explore its structure, and handle missing or inconsistent values.
-2. **Data Wrangling** - Standardize currency and percentage fields, engineer new helper features, and create summaries that make analysis easier.
-3. **Data Visualization** - Use charts and plots to tell the story behind pricing trends, category performance, and customer sentiment.
-4. **Model Building** - Build a simple baseline model to predict product ratings using variables like discounts, categories, and review sentiment.
+1. **Data Cleaning** – Loaded the Amazon product dataset, inspected the schema, and handled missing or inconsistent values to prepare for analysis.
+2. **Data Wrangling** – Standardized currency and percentage columns, engineered helper fields such as discount amount, price ratio, and review length, and created summary statistics for key variables.
+3. **Data Visualization** – Built visualizations to explore pricing distributions, category performance, discount patterns, and how reviews and ratings relate to each other.
+4. **Model Building** – Trained and evaluated baseline and Random Forest models to predict product ratings using features like price, discount percentage, review volume, and text sentiment
    
-#### Findings:
+#### Result Summary:
+The model shows that customer sentiment and engagement are more predictive of overall product ratings than pricing variables. The frequency of positive words like “good” and “excellent” strongly correlates with higher ratings, while negative words such as “doesn’t” lower them. Additionally, deeper discounts and higher review counts are linked to small boosts in rating, suggesting that social proof and perceived value influence consumer perception more than price itself.
+
+The model achieves an R² of 0.29 which explains about a third of rating variation and highlights the emotional and social dimensions of consumer decision-making. The MAE suggest that predictions are on average 0.16 stars off, which is pretty good for a 1-5 rating scale.
 
